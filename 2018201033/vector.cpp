@@ -207,7 +207,56 @@ class vector
  
 };
 
-// int main()
-// {
-//     return 0;
-// }
+int main()
+{
+    vector v1;
+
+    cout<<"size : "<<v1.size()<<endl;
+    for(int i=0;i<10;i++)
+    {
+        v1.push_back(i);
+    }
+    cout<<"size : "<<v1.size()<<endl;
+    v1.insert(100,90);
+    v1.erase(2);
+    for(int i=0;i<v1.size();i++)
+    {
+       cout<<v1.v(i)<<" ";
+    }
+    cout<<endl;
+    cout<<"Front : "<<v1.front()<<endl;
+    cout<<"back : "<<v1.back()<<endl;
+    v1.pop_back();
+    cout<<"\n Value Pop : \n";
+    for(int i=0;i<v1.size();i++)
+    {
+       cout<<v1.v(i)<<" ";
+    }
+    cout<<endl;
+    v1.insert(4,20);
+    cout<<"\nValue inserted : \n";
+    for(int i=0;i<v1.size();i++)
+    {
+       cout<<v1.v(i)<<" ";
+    }
+    v1.erase(3);
+    cout<<"\nvalue erase : \n";
+    for(int i=0;i<v1.size();i++)
+    {
+       cout<<v1.v(i)<<" ";
+    }
+    cout<<"\nsize is :"<<v1.size()<<endl;
+    vector b;
+    cout<<b.size()<<endl;
+    for(int i=0;i<9;i++)
+    {
+        b.push_back(3);
+    }
+    cout<<b.size()<<endl;
+    for(int i=0;i<8;i++)
+    {
+        b.pop_back();
+    }
+    cout<<b.size()<<endl;
+    return 0;
+}

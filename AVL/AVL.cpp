@@ -98,7 +98,8 @@ int searchElement(node *root,int x)
 {
     if(root==NULL)
         return 0;
-    else{
+    else
+    {
         if(root->data == x)
         {
             return 1;
